@@ -28,7 +28,7 @@ const FOOD_DATA = {
     {
       id: "bombay-biryani",
       name: "Bombay Biryani",
-      image: "https://images.unsplash.com/photo-1631515243349-e19c956c8a19?w=500&q=80",
+      image: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=500&q=80",
       distance: "3.5 km",
       deliveryTime: "25 min delivery",
       rating: 5,
@@ -82,7 +82,7 @@ const FOOD_DATA = {
     {
       id: "potato-sandwhic",
       name: "Potato Sandwhic",
-      image: "https://images.unsplash.com/photo-1539252554454-31d626304679?w=500&q=80",
+      image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500&q=80",
       distance: "3.5 km",
       deliveryTime: "25 min delivery",
       rating: 5,

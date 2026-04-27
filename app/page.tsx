@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button"
 
 export default function OnboardingPage() {
   const foodImages = [
-    { src: "https://images.unsplash.com/photo-1563379091339-03b21bc4a4f8?w=500&q=80", size: 180, top: "5%", left: "-10%" }, // Dumplings
+    { src: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&q=80", size: 180, top: "5%", left: "-10%" }, // Dumplings
     { src: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80", size: 240, top: "20%", left: "30%" }, // Pizza
     { src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&q=80", size: 180, top: "10%", left: "80%" }, // Biryani
     { src: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80", size: 220, top: "45%", left: "-15%" }, // Burger
     { src: "https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=80", size: 160, top: "55%", left: "45%" }, // Spring rolls
-    { src: "https://images.unsplash.com/photo-1631515243349-e19c956c8a19?w=500&q=80", size: 180, top: "48%", left: "85%" }, // Biryani
+    { src: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=500&q=80", size: 180, top: "48%", left: "85%" }, // Biryani
   ]
 
   return (
