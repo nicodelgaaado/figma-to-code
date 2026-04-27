@@ -97,25 +97,25 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-b from-[#FFF0F0] to-white pb-32">
       {/* Header */}
       <header className="p-6 flex items-center justify-between gap-3">
-        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-sm shrink-0">
+        <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-sm shrink-0">
           <Image
-            src="https://images.unsplash.com/photo-1610871921824-3d5867e992dd?w=120&h=120&fit=crop&q=80"
+            src="https://images.unsplash.com/photo-1610871921824-3d5867e992dd?w=160&h=160&fit=crop&q=80"
             alt="User avatar"
-            width={48}
-            height={48}
+            width={64}
+            height={64}
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="flex items-center gap-1 text-gray-900 font-semibold">
-          <MapPin size={18} className="text-gray-900" />
+        <div className="flex items-center gap-1.5 text-gray-900 font-bold text-lg">
+          <MapPin size={22} strokeWidth={2.5} className="text-gray-900" />
           <span>Canada</span>
-          <ChevronDown size={18} />
+          <ChevronDown size={22} strokeWidth={2.5} />
         </div>
         <button
           aria-label="Open menu"
-          className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-sm shrink-0 text-gray-900"
+          className="w-16 h-16 flex items-center justify-center bg-white rounded-full shadow-sm shrink-0 text-gray-900"
         >
-          <Menu size={24} strokeWidth={2.5} />
+          <Menu size={28} strokeWidth={2.5} />
         </button>
       </header>
 
