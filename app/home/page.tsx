@@ -98,13 +98,13 @@ export default function HomePage() {
       {/* Header */}
       <header className="p-6 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-sm">
+          <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-sm shrink-0">
             <Image
-              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
-              alt="User"
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="User avatar"
               width={48}
               height={48}
-              className="object-cover"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="flex items-center gap-1 text-gray-900 font-semibold">
