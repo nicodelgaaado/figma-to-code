@@ -13,9 +13,9 @@ export default function OnboardingPage() {
   ]
 
   return (
-    <div className="relative min-h-screen bg-[#FFF0F0] overflow-hidden flex flex-col">
-      {/* Background food items */}
-      <div className="absolute inset-0">
+    <div className="relative min-h-screen bg-[#FFF0F0] flex flex-col overflow-hidden">
+      {/* Food images zone (top ~60% of screen) */}
+      <div className="relative h-[60vh] min-h-[420px] shrink-0 overflow-hidden">
         {foodImages.map((img, i) => (
           <div
             key={i}
@@ -29,16 +29,17 @@ export default function OnboardingPage() {
           >
             <Image
               src={img.src}
-              alt="Food"
+              alt=""
               fill
               className="object-cover"
+              sizes="240px"
             />
           </div>
         ))}
       </div>
 
-      {/* Content */}
-      <div className="relative mt-auto p-8 pb-16 bg-gradient-to-t from-[#FFF0F0] via-[#FFF0F0]/95 to-transparent text-center">
+      {/* Content zone (bottom ~40% of screen, clean background) */}
+      <div className="relative flex-1 bg-[#FFF0F0] px-8 pt-4 pb-12 text-center flex flex-col justify-center">
         <h1
           className="text-4xl font-black text-gray-900 mb-4 leading-tight"
           style={{ textShadow: "2px 3px 0 rgba(229, 91, 75, 0.18)" }}
@@ -49,7 +50,7 @@ export default function OnboardingPage() {
           Unlock a world of culinary delights, right at your fingertips
         </p>
 
-        <Link href="/home">
+        <Link href="/home" className="block">
           <Button className="w-full h-16 rounded-[24px] text-xl shadow-xl shadow-primary/30">
             Get Started
           </Button>
