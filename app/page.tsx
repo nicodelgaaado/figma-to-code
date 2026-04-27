@@ -4,12 +4,12 @@ import { Button } from "@/components/ui/button"
 
 export default function OnboardingPage() {
   const foodImages = [
-    { src: "https://images.unsplash.com/photo-1563379091339-03b21bc4a4f8?w=500&q=80", size: 180, top: "5%", left: "-10%" }, // Dumplings
+    { src: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=500&q=80", size: 180, top: "5%", left: "-10%" }, // Dumplings
     { src: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80", size: 240, top: "20%", left: "30%" }, // Pizza
     { src: "https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&q=80", size: 180, top: "10%", left: "80%" }, // Biryani
     { src: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80", size: 220, top: "45%", left: "-15%" }, // Burger
     { src: "https://images.unsplash.com/photo-1544025162-d76694265947?w=500&q=80", size: 160, top: "55%", left: "45%" }, // Spring rolls
-    { src: "https://images.unsplash.com/photo-1631515243349-e19c956c8a19?w=500&q=80", size: 180, top: "48%", left: "85%" }, // Biryani
+    { src: "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?w=500&q=80", size: 180, top: "48%", left: "85%" }, // Biryani
   ]
 
   return (
@@ -39,7 +39,10 @@ export default function OnboardingPage() {
 
       {/* Content */}
       <div className="relative mt-auto p-8 pb-16 bg-gradient-to-t from-[#FFF0F0] via-[#FFF0F0]/95 to-transparent text-center">
-        <h1 className="text-4xl font-black text-gray-900 mb-4 leading-tight">
+        <h1
+          className="text-4xl font-black text-gray-900 mb-4 leading-tight"
+          style={{ textShadow: "2px 3px 0 rgba(229, 91, 75, 0.18)" }}
+        >
           Test the Joy of <br /> Delivery
         </h1>
         <p className="text-gray-500 text-lg mb-10 max-w-[280px] mx-auto leading-relaxed">
