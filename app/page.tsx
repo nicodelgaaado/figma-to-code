@@ -39,7 +39,10 @@ export default function OnboardingPage() {
 
       {/* Content */}
       <div className="relative mt-auto p-8 pb-16 bg-gradient-to-t from-[#FFF0F0] via-[#FFF0F0]/95 to-transparent text-center">
-        <h1 className="text-4xl font-black text-gray-900 mb-4 leading-tight">
+        <h1
+          className="text-4xl font-black text-gray-900 mb-4 leading-tight"
+          style={{ textShadow: "2px 3px 0 rgba(229, 91, 75, 0.18)" }}
+        >
           Test the Joy of <br /> Delivery
         </h1>
         <p className="text-gray-500 text-lg mb-10 max-w-[280px] mx-auto leading-relaxed">

@@ -120,7 +120,10 @@ export default function HomePage() {
 
       {/* Hero Text */}
       <div className="px-6 mt-4">
-        <h1 className="text-[32px] font-bold leading-tight text-gray-900">
+        <h1
+          className="text-[32px] font-black leading-tight text-gray-900"
+          style={{ textShadow: "2px 3px 0 rgba(229, 91, 75, 0.18)" }}
+        >
           Ready to order your <br /> favourite food ?
         </h1>
       </div>
@@ -131,20 +134,20 @@ export default function HomePage() {
       </div>
 
       {/* Categories */}
-      <div className="mt-8 overflow-x-auto no-scrollbar flex gap-4 px-6">
+      <div className="mt-8 overflow-x-auto no-scrollbar flex gap-3 px-6">
         {CATEGORIES.map((cat) => (
           <button
             key={cat.id}
             onClick={() => setActiveCategory(cat.id)}
             className={cn(
-              "flex items-center gap-2 px-4 py-2 rounded-full border-2 transition-all whitespace-nowrap",
+              "flex items-center gap-2 pl-1.5 pr-5 py-1.5 rounded-full transition-all whitespace-nowrap text-white font-bold",
               activeCategory === cat.id
-                ? "bg-primary/20 border-primary/30 text-primary font-bold shadow-sm"
-                : "bg-gray-100/50 border-transparent text-gray-500 font-medium"
+                ? "bg-primary/70 shadow-md shadow-primary/30"
+                : "bg-gray-400/50"
             )}
           >
-            <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-white shadow-sm">
-              <Image src={cat.icon} alt={cat.name} width={32} height={32} className="object-cover" />
+            <div className="w-9 h-9 rounded-full overflow-hidden border-2 border-white shadow-sm shrink-0">
+              <Image src={cat.icon} alt={cat.name} width={36} height={36} className="object-cover w-full h-full" />
             </div>
             {cat.name}
           </button>
@@ -152,15 +155,17 @@ export default function HomePage() {
       </div>
 
       {/* Popular Food Section */}
-      <div className="px-6 mt-10">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-gray-900">Popular Food</h2>
-          <button className="text-sm font-semibold text-gray-500">See all</button>
+      <div className="mt-8">
+        <div className="px-6 flex items-end justify-between mb-4">
+          <h2 className="text-2xl font-black text-gray-900">Popular Food</h2>
+          <button className="text-sm font-semibold text-gray-700">See all</button>
         </div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="flex gap-4 overflow-x-auto no-scrollbar px-6 pb-2">
           {FOOD_DATA[activeCategory as keyof typeof FOOD_DATA].map((food) => (
-            <FoodCard key={food.id} {...food} />
+            <div key={food.id} className="w-[55%] shrink-0">
+              <FoodCard {...food} />
+            </div>
           ))}
         </div>
       </div>

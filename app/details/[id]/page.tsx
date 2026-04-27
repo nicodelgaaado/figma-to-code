@@ -41,14 +41,17 @@ export default function DetailsPage() {
         </button>
         <h1 className="text-xl font-bold text-gray-900">Details</h1>
         <button className="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-md hover:bg-gray-50 transition-colors">
-          <Heart size={24} className="text-gray-400" />
+          <Heart size={22} className="fill-gray-900 text-gray-900" />
         </button>
       </header>
 
       <div className="relative px-6">
         {/* Title and Info */}
         <div className="mt-4 max-w-[60%]">
-          <h2 className="text-[32px] font-black text-gray-900 leading-tight mb-2">
+          <h2
+            className="text-[34px] font-black text-gray-900 leading-tight mb-2"
+            style={{ textShadow: "2px 3px 0 rgba(229, 91, 75, 0.18)" }}
+          >
             {food.name}
           </h2>
           <div className="flex items-center gap-2 mb-8">
@@ -89,14 +92,14 @@ export default function DetailsPage() {
         <div className="flex items-center gap-4 mb-8">
           <button
             onClick={() => setQuantity(Math.max(1, quantity - 1))}
-            className="w-10 h-10 flex items-center justify-center bg-primary/20 text-primary rounded-full hover:bg-primary/30 transition-colors"
+            className="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full shadow-md shadow-primary/30 hover:bg-primary/90 transition-colors"
           >
             <Minus size={20} strokeWidth={3} />
           </button>
           <span className="text-xl font-bold text-gray-900">{quantity.toString().padStart(2, "0")}</span>
           <button
             onClick={() => setQuantity(quantity + 1)}
-            className="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full shadow-lg shadow-primary/30 hover:bg-primary/90 transition-colors"
+            className="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full shadow-md shadow-primary/30 hover:bg-primary/90 transition-colors"
           >
             <Plus size={20} strokeWidth={3} />
           </button>

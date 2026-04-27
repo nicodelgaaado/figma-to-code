@@ -1,6 +1,6 @@
 "use client"
 
-import { Home, Heart, ShoppingBasket, Bell } from "lucide-react"
+import { Home, Heart, Trash2, Bell } from "lucide-react"
 import { cn } from "@/lib/utils"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
@@ -11,7 +11,7 @@ export function BottomNav() {
   const navItems = [
     { icon: Home, label: "Home", href: "/home" },
     { icon: Heart, label: "Favorite", href: "/favorites" },
-    { icon: ShoppingBasket, label: "Cart", href: "/cart" },
+    { icon: Trash2, label: "Trash", href: "/trash" },
     { icon: Bell, label: "Notifications", href: "/notifications" },
   ]
 
