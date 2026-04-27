@@ -100,7 +100,7 @@ export default function HomePage() {
         <div className="flex items-center gap-3">
           <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-sm shrink-0">
             <Image
-              src="https://randomuser.me/api/portraits/women/68.jpg"
+              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=120&h=120&fit=crop&q=80"
               alt="User avatar"
               width={48}
               height={48}
